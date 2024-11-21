@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3738563-1A9A-4DA0-B7BF-A71884ABE6E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotSearch.Host", "src\HotSearch.Host\HotSearch.Host.csproj", "{951AB9A9-A6D8-4242-9EEE-66F886F4BA60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{D26FDAC8-A309-46CA-9555-352DBD665CB8}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotSearch.Shared", "src\HotSearch.Shared\HotSearch.Shared.csproj", "{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotSearch.Domain", "src\HotSearch.Domain\HotSearch.Domain.csproj", "{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segmenter", "src\Segmenter\Segmenter.csproj", "{91208071-3D87-440D-9AF4-7E947F484D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{951AB9A9-A6D8-4242-9EEE-66F886F4BA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951AB9A9-A6D8-4242-9EEE-66F886F4BA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951AB9A9-A6D8-4242-9EEE-66F886F4BA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951AB9A9-A6D8-4242-9EEE-66F886F4BA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91208071-3D87-440D-9AF4-7E947F484D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91208071-3D87-440D-9AF4-7E947F484D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91208071-3D87-440D-9AF4-7E947F484D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91208071-3D87-440D-9AF4-7E947F484D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{951AB9A9-A6D8-4242-9EEE-66F886F4BA60} = {A3738563-1A9A-4DA0-B7BF-A71884ABE6E0}
+		{D6E9553F-19FA-4856-A6FD-25F97F4F6CFF} = {A3738563-1A9A-4DA0-B7BF-A71884ABE6E0}
+		{A6FE2556-1CB7-4DE4-9FBA-52E8E0111A62} = {A3738563-1A9A-4DA0-B7BF-A71884ABE6E0}
+		{91208071-3D87-440D-9AF4-7E947F484D59} = {A3738563-1A9A-4DA0-B7BF-A71884ABE6E0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DB6DEA1-F43E-447A-B159-DAD3FE9F61E9}
+	EndGlobalSection
+EndGlobal
