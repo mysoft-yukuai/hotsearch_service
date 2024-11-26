@@ -156,7 +156,7 @@ namespace Segmenter.FinalSeg
             }
             if (next < sentence.Length)
             {
-                tokens.Add(sentence[next..]);
+                tokens.Add(sentence.Substring(next));
             }
 
             return tokens;

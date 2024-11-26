@@ -239,7 +239,7 @@ namespace Segmenter
                 var nexts = pair.Value;
                 if (nexts.Count == 1 && k > lastPos)
                 {
-                    words.Add(sentence[k..(nexts[0] + 1)]);
+                    words.Add(sentence.Substring(k, nexts[0] + 1));
                     lastPos = nexts[0];
                 }
                 else
@@ -248,7 +248,7 @@ namespace Segmenter
                     {
                         if (j > k)
                         {
-                            words.Add(sentence[k..(j + 1)]);
+                            words.Add(sentence.Substring(k, j + 1));
                             lastPos = j;
                         }
                     }
@@ -271,7 +271,7 @@ namespace Segmenter
             while (x < n)
             {
                 var y = route[x].Key + 1;
-                var w = sentence[x..y];
+                var w = sentence.Substring(x, y);
                 if (y - x == 1)
                 {
                     buf += w;
@@ -309,7 +309,7 @@ namespace Segmenter
             while (x < N)
             {
                 var y = route[x].Key + 1;
-                var l_word = sentence[x..y];
+                var l_word = sentence.Substring(x, y);
                 if (RegexEnglishChars.IsMatch(l_word) && l_word.Length == 1)
                 {
                     buf += l_word;
@@ -445,7 +445,7 @@ namespace Segmenter
             // Add user word tag of POS
             if (!string.IsNullOrEmpty(tag))
             {
-                UserWordTagTab[word] = tag;
+                UserWordTagTab[word] = tag ?? "";
             }
         }
 

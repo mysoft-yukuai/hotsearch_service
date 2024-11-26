@@ -69,7 +69,7 @@ namespace Segmenter.Common
                 return s;
             }
 
-            return s[..endIndex];
+            return s.Substring(0, endIndex);
         }
 
         public static string Right(this string s, int startIndex)
@@ -80,12 +80,12 @@ namespace Segmenter.Common
             }
 
 
-            return s[startIndex..];
+            return s.Substring(startIndex);
         }
 
         public static string Sub(this string s, int startIndex, int endIndex)
         {
-            return s[startIndex..endIndex];
+            return s.Substring(startIndex, endIndex);
         }
 
         public static bool IsInt32(this string s)
